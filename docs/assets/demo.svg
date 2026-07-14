@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" font-family="Menlo, Consolas, monospace" font-size="14">
+  <rect width="760" height="430" rx="10" fill="#101418"/>
+  <circle cx="24" cy="22" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="22" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="22" r="6" fill="#27c93f"/>
+  <text x="380" y="27" fill="#8b949e" text-anchor="middle" font-size="12">eventfold — funnels and retention over NDJSON files you own</text>
+  <g fill="#c9d1d9">
+    <text x="24" y="62"><tspan fill="#7ee787">$</tspan> eventfold funnel --steps "signup,activate,subscribe" --window 14d</text>
+    <text x="24" y="92"><tspan fill="#79c0ff">funnel:</tspan> signup → activate → subscribe</text>
+    <text x="24" y="112" fill="#8b949e">window: 14d   range: all time   entered: 40 users</text>
+    <text x="24" y="146" fill="#d2a8ff">step                                     users  overall   step%   median</text>
+    <text x="24" y="170">1. signup     <tspan fill="#f778ba">████████████████████████</tspan>     40  100.0%  100.0%        —</text>
+    <text x="24" y="192">2. activate   <tspan fill="#f778ba">█████████████████</tspan><tspan fill="#30363d">░░░░░░░</tspan>     28   70.0%   70.0%      25h</text>
+    <text x="24" y="214">3. subscribe  <tspan fill="#f778ba">███████</tspan><tspan fill="#30363d">░░░░░░░░░░░░░░░░░</tspan>     12   30.0%   42.9%       3d</text>
+    <text x="24" y="252"><tspan fill="#7ee787">$</tspan> eventfold retention --cohort signup --period week --periods 3</text>
+    <text x="24" y="282"><tspan fill="#79c0ff">retention:</tspan> cohort=signup activity=any event period=week</text>
+    <text x="24" y="314" fill="#d2a8ff">cohort       size      p0      p1      p2</text>
+    <text x="24" y="336">2026-06-01     13  <tspan fill="#7ee787">100.0%</tspan>   <tspan fill="#f778ba">53.8%</tspan>   <tspan fill="#f778ba">38.5%</tspan></text>
+    <text x="24" y="358">2026-06-08     14  <tspan fill="#7ee787">100.0%</tspan>   <tspan fill="#f778ba">57.1%</tspan>   <tspan fill="#f778ba">28.6%</tspan></text>
+    <text x="24" y="380">2026-06-15     13  <tspan fill="#7ee787">100.0%</tspan>   <tspan fill="#f778ba">61.5%</tspan>    <tspan fill="#484f58">0.0%</tspan></text>
+    <text x="24" y="410" fill="#8b949e">one binary · NDJSON in, answers out · no ClickHouse, no containers, no UI</text>
+  </g>
+</svg>

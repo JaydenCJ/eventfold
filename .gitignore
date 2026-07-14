@@ -1,0 +1,17 @@
+# build artifacts
+/eventfold
+/dist/
+
+# test and coverage output
+*.test
+*.out
+coverage.*
+
+# local data directories
+/eventfold-data/
+
+# editor noise
+.idea/
+.vscode/
+*.swp
+.DS_Store
